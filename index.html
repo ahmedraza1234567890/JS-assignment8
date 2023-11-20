@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 8</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <script>
+
+
+        // 1
+        let char = prompt("Enter a character:");
+
+if (char.length === 1) {
+  if (char >= 'A' && char <= 'Z') {
+    alert("You entered an uppercase letter.");
+    document.write("You entered an uppercase letter.<br><br>");
+
+  } else if (char >= 'a' && char <= 'z') {
+    alert("You entered a lowercase letter.");
+    document.write("You entered a lowercase letter.<br><br>");
+  } else if (!isNaN(char)) {
+    alert("You entered a number.");
+    document.write("You entered a number.<br><br>");
+  } else {
+    alert("You entered a special character or something else.");
+    document.write("You entered a special character or something else.<br><br>");
+  }
+} else {
+  alert("Please enter only one character.");
+  document.write("Please enter only one character.<br><br>");
+}
+
+        // 2
+        var num1, num2;
+num1 = prompt("Input the First integer", "0");
+num2 = prompt("Input the second integer", "0");
+                                                 
+if(parseInt(num1, 10) > parseInt(num2, 10)) 
+  { 
+  document.write("The larger of "+ num1+ " and "+ num2+ " is "+ num1+ ".<br><br>");
+  }   
+else
+  if(parseInt(num2, 10) > parseInt(num1, 10)) 
+  {
+  document.write("The larger of "+ num1+" and "+ num2+ " is "+ num2+ ".<br><br>");
+  }                  
+else
+  {
+   document.write("The values "+ num1+ " and "+num2+ " are equal.<br><br>");
+  }
+
+
+
+  
+//   3
+var number = parseInt(prompt("Enter a number: "));
+
+if (number > 0) {
+    document.write("The number is positive");
+}
+
+else if (number == 0) {
+  document.write("The number is zero");
+}
+
+else {
+     document.write("The number is negative");
+}
+
+// 4
+var vowel = prompt("Enter your vowel letter")
+
+if (vowel == "a" || vowel == "e" || vowel == "i" || vowel == "o" || vowel == "u" || vowel == "A" || vowel == "E" || vowel == "I" || vowel == "O" || vowel == "U" ){
+  alert ("True")
+  document.write("<br><br>True")
+}
+else {
+  alert ("False")
+  document.write("<br><br> False")
+
+}
+
+// 5
+var correctPass = 786
+var password = prompt("Enter Your Password")
+
+if( password == "" ){
+  alert ("Enter Your Password")
+  document.write("<br><br> Enter Your Password")
+}
+else if (correctPass == password){
+  alert ("Correct Password")
+  document.write ("<br><br>Correct Password")
+
+}
+else {
+  alert ("Incorrect password")
+  document.write("<br><br>Incorrect password")
+
+}
+
+// 6
+var hour = 13;
+var greeting = prompt("Enter Your Hours")
+if (greeting < hour) {
+ document.write  ("<br><br>Good day <br><br>");
+}
+else{
+  document.write ("<br><br>Good evening<br><br>");
+}
+
+
+// 7
+var userInput = prompt("Enter a time in 24-hour clock format (e.g., 1900 for 7pm):");
+var time = parseInt(userInput);
+
+if (time >= 0000 && time < 1200) {
+  document.write("Good morning!");
+} else if (time >= 1200 && time < 1700) {
+  document.write("Good afternoon!");
+} else if (time >= 1700 && time < 2000) {
+  document.write("Good evening!");
+} else if (time >= 2000 && time <= 2359) {
+    document.write("Good night!");
+} else {
+  document.write("Invalid input. Please enter a valid time in 24-hour format.");
+}
+  
+    </script>
+</body>
+</html>
